@@ -12,7 +12,7 @@ import '../../utils/theme_controller.dart';
 class Home_pageController extends GetxController {
 
   final Home_pageService _service;
-  var pageStatus = APIRequestStatus.unInitialized.obs;
+  var pageStatus = APIRequestStatus.loaded.obs;
   var banners = <Data>[].obs;
   var userData = DataUser().obs;
   ThemeController themeController = Get.find();
@@ -21,7 +21,7 @@ class Home_pageController extends GetxController {
 
   @override
   void onInit() {
-    loadData();
+    // loadData();
     super.onInit();
   }
 
